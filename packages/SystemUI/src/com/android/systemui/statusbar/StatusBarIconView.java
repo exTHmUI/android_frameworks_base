@@ -413,7 +413,7 @@ public class StatusBarIconView extends AnimatedImageView implements StatusIconDi
      * @return Drawable for this item, or null if the package or item could not
      *         be found
      */
-    private Drawable getIcon(Context sysuiContext,
+    public static Drawable getIcon(Context sysuiContext,
             Context context, StatusBarIcon statusBarIcon) {
         int userId = statusBarIcon.user.getIdentifier();
         if (userId == UserHandle.USER_ALL) {
