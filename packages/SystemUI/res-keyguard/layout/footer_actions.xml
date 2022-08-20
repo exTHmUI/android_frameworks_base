@@ -22,7 +22,7 @@
     android:layout_width="match_parent"
     android:layout_height="@dimen/footer_actions_height"
     android:elevation="@dimen/qs_panel_elevation"
-    android:paddingTop="8dp"
+    android:paddingTop="@dimen/qs_footer_actions_top_padding"
     android:paddingBottom="@dimen/qs_footer_actions_bottom_padding"
     android:background="@drawable/qs_footer_actions_background"
     android:gravity="center_vertical"
@@ -42,6 +42,7 @@
         android:layout_height="match_parent"
         android:layout_width="wrap_content"
         android:layout_marginEnd="@dimen/qs_footer_action_inset_negative"
+        android:gravity="center_vertical"
         >
 
         <com.android.systemui.statusbar.phone.MultiUserSwitch
