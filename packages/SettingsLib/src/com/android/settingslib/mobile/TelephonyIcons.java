@@ -38,6 +38,7 @@ public class TelephonyIcons {
     public static final int ICON_H_PLUS = R.drawable.exthm_ic_h_plus_mobiledata;
     public static final int ICON_3G = R.drawable.exthm_ic_3g_mobiledata;
     public static final int ICON_4G = R.drawable.exthm_ic_4g_mobiledata;
+    public static final int ICON_4G_LTE = R.drawable.ic_4g_lte_mobiledata;
     public static final int ICON_4G_LTE_PLUS = R.drawable.ic_4g_lte_plus_mobiledata;
     public static final int ICON_4G_PLUS = R.drawable.exthm_ic_4g_plus_mobiledata;
     public static final int ICON_5G_E = R.drawable.exthm_ic_5g_e_mobiledata;
