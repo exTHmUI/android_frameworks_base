@@ -18,6 +18,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="org.exthmui.settingslib">
 
-    <uses-sdk android:minSdkVersion="29" />
+    <uses-sdk android:minSdkVersion="31" />
 
 </manifest>
