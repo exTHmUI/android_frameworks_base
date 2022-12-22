@@ -281,7 +281,7 @@ public class UdfpsDialogMeasureAdapter {
     static int calculateBottomSpacerHeightForPortrait(
             @NonNull FingerprintSensorPropertiesInternal sensorProperties, int displayHeightPx,
             int textIndicatorHeightPx, int buttonBarHeightPx, int dialogMarginPx,
-            int navbarBottomInsetPx, float scaleFactor) {
+            float scaleFactor) {
         final SensorLocationInternal location = sensorProperties.getLocation();
         final int sensorDistanceFromBottom = displayHeightPx
                 - (int) (scaleFactor * location.sensorLocationY)
@@ -296,7 +296,6 @@ public class UdfpsDialogMeasureAdapter {
             Log.d(TAG, "Display height: " + displayHeightPx
                     + ", Distance from bottom: " + sensorDistanceFromBottom
                     + ", Bottom margin: " + dialogMarginPx
-                    + ", Navbar bottom inset: " + navbarBottomInsetPx
                     + ", Bottom spacer height (portrait): " + spacerHeight
                     + ", Scale Factor: " + scaleFactor);
         }
@@ -344,7 +343,7 @@ public class UdfpsDialogMeasureAdapter {
     @VisibleForTesting
     static int calculateHorizontalSpacerWidthForLandscape(
             @NonNull FingerprintSensorPropertiesInternal sensorProperties, int displayWidthPx,
-            int dialogMarginPx, int navbarHorizontalInsetPx, float scaleFactor) {
+            int dialogMarginPx, float scaleFactor) {
         final SensorLocationInternal location = sensorProperties.getLocation();
         final int sensorDistanceFromEdge = displayWidthPx
                 - (int) (scaleFactor * location.sensorLocationY)
@@ -357,7 +356,6 @@ public class UdfpsDialogMeasureAdapter {
             Log.d(TAG, "Display width: " + displayWidthPx
                     + ", Distance from edge: " + sensorDistanceFromEdge
                     + ", Dialog margin: " + dialogMarginPx
-                    + ", Navbar horizontal inset: " + navbarHorizontalInsetPx
                     + ", Horizontal spacer width (landscape): " + horizontalPadding
                     + ", Scale Factor: " + scaleFactor);
         }
