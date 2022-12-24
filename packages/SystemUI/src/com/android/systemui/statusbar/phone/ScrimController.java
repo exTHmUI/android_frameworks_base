@@ -275,7 +275,7 @@ public class ScrimController implements ViewTreeObserver.OnPreDrawListener, Dump
         mScrimStateListener = lightBarController::setScrimState;
         mDefaultScrimAlpha = BUSY_SCRIM_ALPHA;
         CrossWindowBlurListeners mBlur = CrossWindowBlurListeners.getInstance();
-	    QS_CLIP_SCRIM_ALPHA = mBlur.isCrossWindowBlurEnabled() ? 0.6f : 1.0f;
+	    QS_CLIP_SCRIM_ALPHA = mBlur.isCrossWindowBlurEnabled() ? 0.6f : 0.94f;
 
         mKeyguardStateController = keyguardStateController;
         mDarkenWhileDragging = !mKeyguardStateController.canDismissLockScreen();
